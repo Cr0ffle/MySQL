@@ -1066,7 +1066,7 @@ FROM employees_2
 WHERE hire_date BETWEEN '1999-11-15' AND '2000-01-15';
 ```
 
-	![28](https://github.com/sup2is/dev-note/blob/master/db/mysql/images/real-mysql-8/28.png)
+![28](https://github.com/sup2is/dev-note/blob/master/db/mysql/images/real-mysql-8/28.png)
 
 - 옵티마이저는 `p1996_2000` 과 `p2001_2005` 파티션에만 필요한 데이터가 있는것을 파악해서 해당 파티션에 대해서만 분석한다.
 - 이처럼 파티션이 여러 개인 테이블에서 불필요한 파티션을 빼고 쿼리를 수행하기 위해 접근해야 할 것으로 판단되는 테이블만 골라내는 과정을 파티션 프루닝이라고 한다.
